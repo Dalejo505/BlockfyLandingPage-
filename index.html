@@ -18,8 +18,9 @@
   </head>
   <body>
       <nav class="header">
+        <a href="#">
         <h1>Block<span>fy</span></h1>
-
+          </a>
         <div class="navMenu">
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Nuestros Servicios</a>
@@ -83,7 +84,61 @@
         <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab"></div>
       </div>
     </div>
-    <section id="hero">
+    <section class="slide">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+                <div>
+                  <h1 class="main-title">MISS UNIVERSE</h1>
+                  <p>El Primer NFT de miss universo en colombia</p>
+                    <a href="https://aritymissuniverse.arity.club">
+                      <button>Conoce mas</button>
+                  </a>
+                </div>
+                <div>
+                  <img src="assets\img\bottle_beach.png.png" class="d-block w-100" src="..." alt="First slide">
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <h1 class="main-title">METAESTATE</h1>
+              <p>Experiencia de realidad virtual para RealState</p>
+              <a href="https://metaestate.app">
+                <button>Conoce mas</button>
+              </a>
+            </div>
+            <div>
+              <img src="assets\img/meta.png" class="d-block w-100" src="..." alt="Second slide">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div>
+              <h1 class="main-title">TOKENIZACIÓN</h1>
+              <p>Sumérgete en las finanzas del futuro</p>
+              <a href="https://metaestate.app">
+                <button>Conoce mas</button>
+              </a>
+            </div>
+            <div>
+              <img src="assets\img\casa.png" class="d-block w-100" src="..." alt="Third slide">
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+<!------
+      ----MISS UNIVERSE----
       <div class="mySwiper">
         <div class="main-wrapper swiper-wrapper">
           <div class="main swiper-slide" id="savanna">
@@ -94,50 +149,46 @@
                 </div>
                 <div class="main-content">
                   <div class="main-content__title">El Primer NFT de miss universo en colombia</div>
-                  <button class="more-menu">
+                  <a href="https://aritymissuniverse.arity.club" class="more-menu">
                     Conoce Mas
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                      <line x1="-5" y1="12" x2="19" y2="12" />
-                      <line x1="15" y1="16" x2="19" y2="12" />
-                      <line x1="15" y1="8" x2="19" y2="12" />
-                    </svg>
-                  </button>
+                  </a>
                 </div>
               </div>
               <div id="containMiss" class="center">
                 <div class="right-side__img">
                   <div class="bottle-bg"></div>
-                  <img id="miss" class="bottle-img" src="assets\img\bottle_beach.png.png" />
+                  <a href="https://aritymissuniverse.arity.club">
+                    <img id="miss" class="bottle-img" src="assets\img\bottle_beach.png.png" />
+                  </a>
                 </div>
               </div>
             </div>
-            </div>
-          <div  class="main swiper-slide" id="glacier">
-            <div id="containMeta" class="center">
-              <div class="right-side__img">
-                <div class="bottle-bg"></div>
-                <img id="meta" class="bottle-img" src="assets\img/meta.png" />
-              </div>
-            </div>
+          </div>
+          ----METAESTATE----
+          <div class="main swiper-slide" id="savanna">
+            <div class="missContainer">
             <div class="left-side">
               <div class="main-wrapper">
                 <h1 class="main-title">METAESTATE</h1>
               </div>
               <div class="main-content">
                 <div class="main-content__title">Experiencia de realidad virtual para RealState</div>
-                <button class="more-menu">
-                  Conoce mas
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="-5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
-                </button>
+                <a href="https://metaestate.app" class="more-menu">
+                  Conoce Mas
+                </a>
+              </div>
+            </div>
+            <div id="containMiss" class="center">
+              <div class="right-side__img">
+                <div class="bottle-bg"></div>
+                <a href="https://metaestate.app" class="more-menu">
+                  <img id="miss" class="bottle-img" src="assets\img/meta.png" />
+                </a>
               </div>
             </div>
           </div>
+        </div>
+        ----TOKENIZACION----
           <div class="main swiper-slide" id="coral">
             <div id="tokenizacion" class="left-side">
               <div class="main-wrapper">
@@ -147,12 +198,6 @@
                 <div class="main-content__title">Sumérgete en las finanzas del futuro </div>
                 <button class="more-menu">
                   Conoce Mas
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.7" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <line x1="-5" y1="12" x2="19" y2="12" />
-                    <line x1="15" y1="16" x2="19" y2="12" />
-                    <line x1="15" y1="8" x2="19" y2="12" />
-                  </svg>
                 </button>
               </div>
             </div>
@@ -177,6 +222,11 @@
           </svg>
         </div>
       </div>
+----->
+
+
+
+
     </section>
      <!-----------------------section services----------------------------------->
     <section id="servicios">
@@ -328,6 +378,7 @@
         </div>
       </div>
     </section>
+    <!-----------------------section Clientes----------------------------------->
     <section class="equipo">
       <ul class="equipo__list">
         <li class="equipo__item" tabindex="0" data-active="data-active">
