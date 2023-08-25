@@ -267,29 +267,6 @@ Equipo
 
   /*----------tecnologias--------------*/
 
-  $('#carousel-example').on('slide.bs.carousel', function (e) {
-    /*
-        CC 2.0 License Iatek LLC 2018 - Attribution required
-    */
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 5;
-    var totalItems = $('.carousel-item').length;
- 
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
-            }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
-        }
-    }
-});
-
   new Swiper(".clients-slider", {
     speed: 300,
     loop: true,
@@ -322,4 +299,35 @@ Equipo
 $(".card-sm__container ul").owlCarousel({
   items: 4,
   addClassActive: true,
+});
+
+  /*---------------------------
+slides
+----------------------------*/
+document.addEventListener('DOMContentLoaded', function() {
+  const video = document.getElementById('background-video');
+  const slides = document.querySelectorAll('.carousel-item');
+  
+  const videoSources = [
+    '../img/mafev.mp4',
+    '../img/tokenizacion.mp4',
+    'video_slide3.mp4'
+  ];
+  
+  const carousel = new bootstrap.Carousel(document.getElementById('carouselExampleIndicators'), {
+    interval: 5000, // Tiempo en milisegundos entre las diapositivas
+    pause: false // No pausar al pasar el mouse sobre el carrusel
+  });
+  
+  carousel.on('slide.bs.carousel', function (event) {
+    const slideIndex = event.to;
+    video.src = videoSources[slideIndex];
+    video.load();
+    video.play();
+  });
+  
+  // Reproducir el video del primer slide al inicio
+  video.src = videoSources[0];
+  video.load();
+  video.play();
 });
